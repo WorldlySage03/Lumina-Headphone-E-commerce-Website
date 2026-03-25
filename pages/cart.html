@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Cart</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar glass">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">LUMINA</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="learn.html">Learn More</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-badge">1</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header container" style="text-align: left;">
+        <h1>Your Cart</h1>
+        <p>1 item in your cart.</p>
+    </div>
+
+    <section class="container cart-layout">
+        <div class="cart-items">
+            <!-- Cart Item -->
+            <div class="cart-item glass">
+                <img src="../images/hero-headphones.png" alt="Lumina Studio Pro">
+                <div class="cart-item-details">
+                    <h3>Lumina Studio Pro</h3>
+                    <p class="product-category">Audio</p>
+                    <p class="cart-item-price">$349.00</p>
+                    <div class="cart-quantity">
+                        <button class="qty-btn">-</button>
+                        <span>1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+                <button class="remove-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="cart-summary glass">
+            <h2>Order Summary</h2>
+            <br>
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$349.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>Free (Next Day Delivery)</span>
+            </div>
+            <div class="summary-row">
+                <span>Taxes</span>
+                <span>$27.92</span>
+            </div>
+            <div class="summary-total">
+                <span>Total</span>
+                <span>$376.92</span>
+            </div>
+            <button class="btn btn-primary" style="margin-top: 1rem;">Complete Checkout</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-newsletter">
+                    <h2>Stay in the loop.</h2>
+                    <p>Subscribe to our newsletter for early access to new releases and exclusive audio content.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">LUMINA</a>
+                    <p>The ultimate audio experience for true audiophiles, meticulously engineered in California.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Explore</h4>
+                        <a href="../index.html">Home</a>
+                        <a href="learn.html">Features</a>
+                        <a href="cart.html">Shop Studio Pro</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Returns</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumina Audio Inc. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
