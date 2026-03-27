@@ -159,6 +159,29 @@ h3,
     border-radius: 50%;
 }
 
+.mobile-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--text-main);
+    cursor: pointer;
+    margin-left: 1.5rem;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.mobile-toggle:hover {
+    color: var(--accent);
+}
+
+.mobile-toggle.is-active {
+    transform: rotate(90deg);
+}
+
+.nav-toggle {
+    display: none;
+}
+
 /* Glassmorphism */
 .glass {
     background: var(--surface-color);
@@ -672,8 +695,36 @@ h3,
         font-size: 2.5rem;
     }
 
+    .mobile-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .nav-links {
-        display: none;
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 100%;
+        max-width: 300px;
+        height: calc(100vh - 80px);
+        background: rgba(7, 7, 10, 0.98);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4rem;
+        gap: 2rem;
+        transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-left: 1px solid var(--glass-border);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .nav-toggle:checked ~ .nav-links {
+        right: 0;
+    }
+    
+    .nav-toggle:checked ~ .nav-icons .mobile-toggle {
+        color: var(--accent);
+        transform: rotate(90deg);
     }
 
     .hero-subtitle {
